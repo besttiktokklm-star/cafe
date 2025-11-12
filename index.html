@@ -1023,21 +1023,27 @@
             </div>
           </div>
 
-          <form class="contact-form" onsubmit="event.preventDefault(); alert('Este formulário é apenas um exemplo. Substitui pelo teu sistema real de contacto.');">
-            <div>
-              <label for="nome">Nome</label>
-              <input id="nome" type="text" placeholder="Nome do responsável / gerente" />
-            </div>
-            <div>
-              <label for="espaco">Nome do café / pastelaria</label>
-              <input id="espaco" type="text" placeholder="Ex: Café Central" />
-            </div>
-            <div>
-              <label for="msg">O que procuras?</label>
-              <textarea id="msg" placeholder="Ex: Quero conteúdo para lançar um brunch ao fim de semana."></textarea>
-            </div>
-            <button class="btn-primary" type="submit">Enviar pedido de exemplo</button>
-          </form>
+          <form class="contact-form" action="https://formsubmit.co/conteudocafesuport@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div>
+      <label for="nome">Nome</label>
+      <input id="nome" name="Nome" type="text" required placeholder="Nome do responsável / gerente" />
+    </div>
+
+    <div>
+      <label for="espaco">Nome do café / pastelaria</label>
+      <input id="espaco" name="Café" type="text" required placeholder="Ex: Café Central" />
+    </div>
+
+    <div>
+      <label for="msg">O que procuras?</label>
+      <textarea id="msg" name="Mensagem" required placeholder="Ex: Quero conteúdo para lançar um brunch ao fim de semana."></textarea>
+    </div>
+
+    <button class="btn-primary" type="submit">Enviar pedido de exemplo</button>
+</form>
         </div>
       </div>
     </section>
