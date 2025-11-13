@@ -15,11 +15,18 @@
       --text: #2b1c15;
     }
 
+    /* Ajuste da imagem do Red Velvet */
+    .redvelvet-adjust {
+      object-fit: cover;
+      object-position: center 70%;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -802,7 +809,7 @@
               </div>
               <div class="hero-card">
                 <div class="mock-top">
-                  <img src="redvelvet.jpg" alt="Bolo Red Velvet" class="hero-photo">
+                  <img src="redvelvet.jpg" alt="Bolo Red Velvet" class="hero-photo redvelvet-adjust">
                 </div>
                 <div class="hero-card--text">
                   <p>"Novo bolo da semana: red velvet caseiro 😍"</p>
